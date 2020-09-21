@@ -1,0 +1,14 @@
+{
+  "name": "vanillajs-spa",
+  "version": "1.0.0",
+  "description": "js boilerplate for single page application",
+  "main": "./js/app.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "author": "pys99pys",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.0.3"
+  }
+}

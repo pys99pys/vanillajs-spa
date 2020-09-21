@@ -1,0 +1,66 @@
+:root {
+  --layout: 8px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: calc(var(--layout) * 1.75);
+  color: #333;
+}
+
+#app > header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #d2d2d2;
+}
+
+#app > header .logo {
+  font-size: calc(var(--layout) * 3);
+  font-weight: 700;
+}
+
+#app > header nav {
+  margin-top: calc(var(--layout) * 1.5);
+}
+
+#app > header nav > a {
+  margin: 0 calc(var(--layout));
+}
+
+#app > footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #d2d2d2;
+}
+
+#main {
+  min-height: calc(100vh - 100px - 100px);
+  padding: calc(var(--layout) * 5);
+  box-sizing: border-box;
+  font-size: calc(var(--layout) * 2);
+  font-weight: 700;
+  text-align: center;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
